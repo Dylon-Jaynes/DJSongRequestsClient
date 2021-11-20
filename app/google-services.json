@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "304760942889",
+    "firebase_url": "https://djsongrequestsapp-default-rtdb.firebaseio.com",
+    "project_id": "djsongrequestsapp",
+    "storage_bucket": "djsongrequestsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304760942889:android:fa50fadd82330d16388738",
+        "android_client_info": {
+          "package_name": "com.example.djsongrequestsbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304760942889-24jpmgs34d57p7mikla6u135g4h2njfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBuFe-qIfebFcit0BrNMYNin-6AeCt5Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304760942889-24jpmgs34d57p7mikla6u135g4h2njfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304760942889:android:595b9329c75f70dc388738",
+        "android_client_info": {
+          "package_name": "com.example.djsongrequestsclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304760942889-24jpmgs34d57p7mikla6u135g4h2njfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBuFe-qIfebFcit0BrNMYNin-6AeCt5Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304760942889-24jpmgs34d57p7mikla6u135g4h2njfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

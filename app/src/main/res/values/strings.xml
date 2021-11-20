@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DJSongRequestsClient</string>
+    <string name="enter_dj_id_text">Welcome! Before you can make song requests, you need to enter the DJ\'s Id. Don\'t know what their Id is? Just ask the DJ or look at their booth/stand.</string>
+    <string name="enter_dj_id_hint">DJ-ID (ex. Jaybay DJ Entertainment)</string>
+    <string name="next_text">Next</string>
+    <string name="make_a_song_request_text">Make a Song Request!</string>
+    <string name="song_hint">Song</string>
+    <string name="artist_hint">Artist</string>
+    <string name="album_hint">Album</string>
+    <string name="year_hint">Year</string>
+    <string name="note_hint">Note...</string>
+    <string name="send_text">Send</string>
+</resources>

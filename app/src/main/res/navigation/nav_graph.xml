@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/songRequestFragment">
+
+    <fragment
+        android:id="@+id/songRequestFragment"
+        android:name="com.example.djsongrequestsclient.ui.fragments.SongRequestFragment"
+        android:label="fragment_song_request"
+        tools:layout="@layout/fragment_song_request">
+        <action
+            android:id="@+id/action_songRequestFragment_to_djIdFragment"
+            app:destination="@id/djIdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/djIdFragment"
+        android:name="com.example.djsongrequestsclient.ui.fragments.DjIdFragment"
+        android:label="fragment_dj_id"
+        tools:layout="@layout/fragment_dj_id">
+        <action
+            android:id="@+id/next_destination"
+            app:destination="@id/songRequestFragment" />
+    </fragment>
+</navigation>
