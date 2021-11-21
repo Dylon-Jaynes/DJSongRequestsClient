@@ -29,4 +29,9 @@ class SongRequestFragment: Fragment() {
         //hide action bar from splash screen
         (activity as AppCompatActivity).supportActionBar!!.hide()
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

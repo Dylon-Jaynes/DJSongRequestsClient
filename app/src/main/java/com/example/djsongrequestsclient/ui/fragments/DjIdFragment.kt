@@ -13,6 +13,7 @@ import androidx.navigation.Navigation
 import com.example.djsongrequestsclient.R
 import com.example.djsongrequestsclient.databinding.FragmentDjIdBinding
 import com.example.djsongrequestsclient.ui.viewModels.DjIdViewModel
+import com.google.firebase.database.DatabaseReference
 
 class DjIdFragment: Fragment() {
 
@@ -36,10 +37,13 @@ class DjIdFragment: Fragment() {
 
         viewModel = ViewModelProvider(this)[DjIdViewModel::class.java]
 
-        viewModel.dbResponseMessage.observe(viewLifecycleOwner, Observer { it ->
-            it.getContentIfNotHandled()?.let {
-                Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
-            }
+        viewModel.dbResponseError.observe(viewLifecycleOwner, Observer { it ->
+            binding.editTextEnterDjId.error = it.toString()
+            binding.editTextEnterDjId.requestFocus()
+        })
+
+        viewModel.navigateToSongRequestFragment.observe(viewLifecycleOwner, Observer {
+            Navigation.findNavController(view).navigate(R.id.next_destination)
         })
 
         binding.buttonNext.setOnClickListener {
@@ -51,5 +55,10 @@ class DjIdFragment: Fragment() {
         super.onStart()
         //hide action bar from splash screen
         (activity as AppCompatActivity).supportActionBar!!.hide()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
